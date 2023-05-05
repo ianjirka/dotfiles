@@ -28,7 +28,6 @@ bind '"\e[B":history-search-forward'
 # Keep Ctrl-Left and Ctrl-Right working when the above are used
 bind '"\e[1;5C":forward-word'
 bind '"\e[1;5D":backward-word'
-echo profile
 
 if shopt -q login_shell
 then
