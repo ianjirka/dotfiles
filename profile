@@ -8,6 +8,14 @@
 # for ssh logins, install and configure the libpam-umask package.
 #umask 022
 
+if [[ $(grep microsoft-standard-WSL /proc/version) ]]; then
+    # Enable WSL integrations
+
+    # Let WSL launch the Windows browesr
+    # From: https://superuser.com/a/1368878
+    export BROWSER=wslview
+fi
+
 # if running bash
 if [ -n "$BASH_VERSION" ]; then
     # include .bashrc if it exists

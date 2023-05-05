@@ -9,14 +9,6 @@ case $- in
       *) return;;
 esac
 
-if [[ $(grep microsoft-standard-WSL /proc/version) ]]; then
-    # Enable WSL integrations
-
-    # Let WSL launch the Windows browesr
-    # From: https://superuser.com/a/1368878
-    export BROWSER=wslview
-fi
-
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
 HISTCONTROL=ignoreboth
