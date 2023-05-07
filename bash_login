@@ -3,3 +3,7 @@
 # This file is not read by bash(1), if ~/.bash_profile exists.
 
 cd ~
+
+if [ -f ".bash_login.local" ]; then
+    source .bash_login.local
+fi

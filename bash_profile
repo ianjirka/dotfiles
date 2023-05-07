@@ -29,6 +29,10 @@ bind '"\e[B":history-search-forward'
 bind '"\e[1;5C":forward-word'
 bind '"\e[1;5D":backward-word'
 
+if [ -f ".bash_profile.local" ]; then
+    source .bash_profile.local
+fi
+
 if shopt -q login_shell
 then
     if [ -f ~/.profile ]

@@ -33,3 +33,7 @@ fi
 if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
+
+if [ -f ".profile.local" ]; then
+    source .profile.local
+fi
